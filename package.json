@@ -1,0 +1,44 @@
+{
+  "name": "hospital",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix build",
+    "dev": "remix dev --manual",
+    "start": "remix-serve ./build/index.js",
+    "typecheck": "tsc",
+    "generate": "drizzle-kit generate:sqlite",
+    "seed": "tsx ./db/seed.ts",
+    "studio": "drizzle-kit studio --port 6000 --verbose"
+  },
+  "dependencies": {
+    "@epic-web/remember": "^1.0.2",
+    "@remix-run/css-bundle": "^2.3.1",
+    "@remix-run/node": "^2.3.1",
+    "@remix-run/react": "^2.3.1",
+    "@remix-run/serve": "^2.3.1",
+    "better-sqlite3": "^9.1.1",
+    "drizzle-orm": "^0.29.0",
+    "isbot": "^3.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remix-utils": "^7.3.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.3.1",
+    "@remix-run/eslint-config": "^2.3.1",
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "drizzle-kit": "^0.20.4",
+    "eslint": "^8.38.0",
+    "prettier": "^3.1.0",
+    "tailwindcss": "^3.3.5",
+    "tsx": "^4.5.0",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
