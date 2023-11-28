@@ -148,8 +148,8 @@ export default function Index() {
               <span className="font-semibold mr-2">
                 Consultation Time:{" "}
                 <TimeSpent
-                  start={r.startTime ?? undefined}
-                  end={r.endTime ?? undefined}
+                  start={r.startTime ? Number(r.startTime) : undefined}
+                  end={r.endTime ? Number(r.endTime) : undefined}
                 />
               </span>
               <span className="font-semibold">
